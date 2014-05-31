@@ -1,0 +1,16 @@
+*vim-mocha-special-blend.txt*
+
+===============================================================================
+CONTENTS                                              *vim-mocha-special-blend*
+
+    1. Intro .................................. |vim-mocha-special-blend-intro|
+===============================================================================
+1. Intro                                        *vim-mocha-special-blend-intro*
+
+Ever want to run a single mocha test from your javascript test suite?
+
+This plugin is a work in progress and most of the code is stolen from the great Jarrod Taylor.
+
+https://github.com/JarrodCTaylor/vim-qunit-special-blend
+
+" vim: ft=help"
