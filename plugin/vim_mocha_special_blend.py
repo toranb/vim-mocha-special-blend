@@ -2,11 +2,11 @@ import re
 
 
 def sub_current_test_with_singleTest(module_line_num, current_buffer):
-    return re.sub(r"^it", r"it.only", current_buffer[module_line_num].lstrip())
+    return re.sub(r"it\(", r"it.only(", current_buffer[module_line_num])
 
 
 def sub_singleTest_with_test(module_line_num, current_buffer):
-    return re.sub(r"^it.only", r"it", current_buffer[module_line_num].lstrip())
+    return re.sub(r"it.only\(", r"it(", current_buffer[module_line_num])
 
 
 def sub_current_module_with_singleModule(module_line_num, current_buffer):
