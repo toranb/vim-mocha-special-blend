@@ -10,11 +10,11 @@ def sub_singleTest_with_test(module_line_num, current_buffer):
 
 
 def sub_current_module_with_singleModule(module_line_num, current_buffer):
-    return re.sub(r"^describe", r"describe.only", current_buffer[module_line_num])
+    return re.sub(r"describe\(", r"describe.only(", current_buffer[module_line_num])
 
 
 def sub_singleModule_with_module(module_line_num, current_buffer):
-    return re.sub(r"^describe.only", r"describe", current_buffer[module_line_num])
+    return re.sub(r"describe.only\(", r"describe(", current_buffer[module_line_num])
 
 
 def get_line_num_of_current_module(current_line_index, current_buffer):
