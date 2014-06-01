@@ -2,6 +2,10 @@
 
 Ever want to run a single mocha test or module without having to find/replace?
 
+## The Plugin In Action
+
+![javascript](https://cloud.githubusercontent.com/assets/147411/3143012/a3527d82-e9e0-11e3-96d6-7d72e6e14dbd.gif)
+
 ## Installation
 
 Use your plugin manager of choice.
