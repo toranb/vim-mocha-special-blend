@@ -20,9 +20,9 @@ class VimMochaSpecialBlendTests(unittest.TestCase):
 
     def test_sub_current_module_with_singleModule_returns_the_proper_string(self):
         current_buffer = self.build_buffer_helper()
-        line_num = sut.get_line_num_of_current_module(7, current_buffer)
+        line_num = sut.get_line_num_of_current_module(13, current_buffer)
         returned_string = sut.sub_current_module_with_singleModule(line_num, current_buffer)
-        self.assertEqual('    describe.only("first suite of tests", function() {\n', returned_string)
+        self.assertEqual('        describe.only("suite number two", function() {\n', returned_string)
 
     def test_sub_singleModule_with_module_returns_the_proper_string(self):
         current_buffer = self.build_buffer_helper()

@@ -7,3 +7,9 @@
             equal(2, 2, "The values are also equal");
         });
     });
+
+        describe("suite number two", function() {
+            it("test example 3", function() {
+                equal(3, 3, "The values are equal");
+            });
+        });

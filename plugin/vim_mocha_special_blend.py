@@ -20,7 +20,7 @@ def sub_singleModule_with_module(module_line_num, current_buffer):
 def get_line_num_of_current_module(current_line_index, current_buffer):
     module_regex = re.compile(r"^describe\(")
     for line_num in xrange(current_line_index - 1, -1, -1):
-        if module_regex.search(current_buffer[line_num]) is not None:
+        if module_regex.search(current_buffer[line_num].lstrip()) is not None:
             return line_num
     return False
 
