@@ -25,8 +25,8 @@ for most distributions on Linux/Mac.  You can check this by running
 ``vim --version | grep +python``
 if you get a hit you are in business.
 
-Tests are ran with either django-nose or nosetest so these will need to be
-pip installed in order for the plugin to function properly.
+This plugin will work with any build tool or test suite because the command it
+runs is an argument you pass in at the end of the function you invoke (see below).
 
 ## Usage
 
