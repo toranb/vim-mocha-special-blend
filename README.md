@@ -51,14 +51,12 @@ your vimrc:
 ```
     nmap <Leader>tm :call InvokeTestMethodByType()<CR>
     function! InvokeTestMethodByType()
-        let action="npm test"
-        exe ':RunSingleMochaTest ' . action
+        exe ':RunSingleMochaTest npm test'
     endfunction
 
     nmap <Leader>tc :call InvokeTestClassByType()<CR>
     function! InvokeTestClassByType()
-        let action="npm test"
-        exe ':RunSingleMochaModule ' . action
+        exe ':RunSingleMochaModule npm test'
     endfunction
 ```
 
