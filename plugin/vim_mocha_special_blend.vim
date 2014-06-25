@@ -7,7 +7,7 @@ python << endOfPython
 import vim_mocha_special_blend as sb
 endOfPython
 
-function! RunSingleModule(command)
+function! RunSingleModuleForMocha(command)
 python << endOfPython
 
 command_to_run = vim.eval("a:command")
@@ -28,7 +28,7 @@ else:
 endOfPython
 endfunction
 
-function! RunSingleTest(command)
+function! RunSingleTestForMocha(command)
 python << endOfPython
 
 command_to_run = vim.eval("a:command")
@@ -49,5 +49,5 @@ else:
 endOfPython
 endfunction
 
-command! -nargs=1 RunSingleMochaTest call RunSingleTest(<f-args>)
-command! -nargs=1 RunSingleMochaModule call RunSingleModule(<f-args>)
+command! -nargs=1 RunSingleMochaTest call RunSingleTestForMocha(<f-args>)
+command! -nargs=1 RunSingleMochaModule call RunSingleModuleForMocha(<f-args>)
